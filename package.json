@@ -4,6 +4,7 @@
     "grammy": "^1.26.1"
   },
   "name": "mini_app_burger",
+  "type": "module",
   "version": "1.0.0",
   "description": "its not real burger seller its for test",
   "main": "forServer.js",
