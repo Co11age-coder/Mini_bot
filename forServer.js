@@ -11,7 +11,7 @@ app.use('/html', express.static("html"))
 app.use('/image', express.static("images"))
 
 app.get('/', (req, res) => {
-  res.send('CRYBAUTYAAAAAAAAAAAAREEEE!')
+  res.send('HelloWorld!')
 })  
 
 app.listen(port, () => {
