@@ -10,7 +10,7 @@ app.use('/js', express.static("js"))
 app.use('/html', express.static("html"))
 app.use('/image', express.static("images"))
 
-app.post('/api/initData', (req, res) => {
+app.post('/api/check_hash', (req, res) => {
   res.sendFile('forHTML.html', {root: '.'})
 })  
 
