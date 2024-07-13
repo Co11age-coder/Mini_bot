@@ -1,8 +1,8 @@
 import { Bot } from "grammy";
 
+let botBoken = process.env.BOT_TOKEN
+const bot = new Bot(botBoken);
 
-const bot = new Bot("7352192152:AAGtPkRZGqvzcIyVHkEteO0iS4ti8FvNxN4");
-let batata =process.env.There_IS_Key
 
 bot.command("start", (ctx) => ctx.reply("Welcome! Up and running."));
 
