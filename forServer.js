@@ -10,6 +10,10 @@ app.use('/js', express.static("js"))
 app.use('/html', express.static("html"))
 app.use('/image', express.static("images"))
 
+app.post('/api', (req, res) => {
+  res.sendFile('forHTML.html', {root: '.'})
+})  
+
 app.get('/', (req, res) => {
   res.send('HelloWorld!')
 })  
