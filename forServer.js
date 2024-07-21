@@ -12,6 +12,12 @@ app.use('/image', express.static("images"))
 
 app.post('/api/check_hash', (req, res) => {
   res.sendFile('forHTML.html', {root: '.'})
+  
+})  
+
+app.post('/api/check_hash', (req, res) => {
+console.log('Body:')
+console.log(req.body)
 })  
 
 app.get('/', (req, res) => {
